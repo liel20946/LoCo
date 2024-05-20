@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.user.loco.RecoveryResult"
+    android:background="@color/BaseColor">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar">
+    </include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Password Is:"
+        android:id="@+id/textView2"
+        android:textColor="@color/LoCoOrange"
+        android:textSize="18sp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/app_bar"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/passwordHide"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:textColor="@color/LoCoOrange"
+        android:textSize="16sp"
+        android:layout_marginLeft="20sp"
+        android:layout_alignBottom="@+id/textView2"
+        android:inputType="textPassword" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Password"
+        android:id="@+id/showThePassBtn"
+        android:background="@color/appBarC"
+        android:textColor="@color/white"
+        android:layout_below="@+id/passwordShow"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="103sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordShow"
+        android:textColor="@color/Red"
+        android:textSize="26sp"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="137sp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Copy Password"
+        android:id="@+id/copybtn"
+        android:layout_below="@+id/showThePassBtn"
+        android:layout_alignEnd="@+id/showThePassBtn"
+        android:layout_marginTop="53sp"
+        android:layout_alignStart="@+id/showThePassBtn"
+        android:layout_alignLeft="@+id/showThePassBtn"
+        android:background="@color/appBarC"
+        android:textColor="@color/white"
+        android:onClick="Copy" />
+
+</RelativeLayout>

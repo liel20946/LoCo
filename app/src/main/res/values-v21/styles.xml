@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="AppTheme.Base">
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="android:colorPrimary">@color/appBarC</item>
+        <item name="android:colorPrimaryDark">@color/appc</item>
+        <item name="android:textColorPrimary">@color/textColorL</item>
+        <item name="android:colorAccent">@color/BaseColor</item>
+
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">#00000000</item>
+
+
+    </style>
+
+
+</resources>
+
+

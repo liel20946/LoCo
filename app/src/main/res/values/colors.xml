@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="off_white">#fffafafa</color>
+    <color name="white">#fff</color>
+    <color name="appc">#2196f3</color>
+    <color name="BaseColor">#ffffff</color>
+    <color name="appBarC">#64b5f6</color>
+    <color name="blackk">#010101</color>
+    <color name="textColorL">#000000</color>
+    <color name="LoCoOrange">#ffca28</color>
+    <color name="reallyDark">#212021</color>
+
+
+    <color name="Red">#D9f36b60</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="purple">#673AB7</color>
+    <color name="green">#1ee9b7</color>
+    <color name="black">#000000</color>
+    <color name="cyan"> #000000</color>
+    <color name="blue"> #4CAF50</color>
+    <color name="lightgreen">#3F51B5</color>
+    <color name="pink">#E040FB</color>
+
+    <color name="okGreen">#69F0AE</color>
+    <color name="badRed">#FF5252</color>
+
+
+
+
+</resources>

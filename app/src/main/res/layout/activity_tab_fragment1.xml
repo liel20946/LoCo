@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.user.loco.TabFragment1"
+    android:background="@color/BaseColor">
+
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/BaseColor"
+        android:scrollbarSize="10dp"
+        android:scrollbarThumbVertical="@drawable/custom_scroll_style"
+        android:divider="@drawable/list2_div"
+        android:dividerHeight="2px"
+        tools:context="com.example.messagingtutorial.app.ListUsersActivity"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+
+    <TextView
+        android:id="@android:id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/empty_list1"
+        android:textColor="@color/textColorL"
+        android:textSize="18sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fabb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:menu_colorNormal="@color/LoCoOrange"
+        app:menu_colorPressed="@color/appBarC"
+        android:layout_alignBottom="@+id/list"
+        android:layout_alignEnd="@android:id/empty" >
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_create_white_24dp"
+            app:fab_colorNormal="@color/LoCoOrange"
+            app:fab_colorPressed="@color/appBarC"
+            app:fab_size="mini"
+            app:fab_label="Create a group" />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="wrap_content"
+            app:fab_colorNormal="@color/LoCoOrange"
+            app:fab_colorPressed="@color/appBarC"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_transfer_within_a_station_white_24dp"
+            app:fab_size="mini"
+            app:fab_label="Join one" />
+    </com.github.clans.fab.FloatingActionMenu>
+
+</RelativeLayout>

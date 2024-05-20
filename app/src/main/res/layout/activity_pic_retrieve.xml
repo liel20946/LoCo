@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.loco.PicRetrieve"
+    android:background="@color/appBarC">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar">
+    </include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retrieving Your Data Please Be Patient :D"
+        android:id="@+id/textView5"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="84dp"
+        android:textSize="24sp" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_centerVertical="true"
+        android:max="100"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:indeterminate="false"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:progress="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0%"
+        android:id="@+id/precTextV"
+        android:layout_below="@+id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="i&apos;m done"
+        android:id="@+id/imdonebtn"
+        android:textColor="@color/blackk"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="77dp"
+        android:background="@color/BaseColor" />
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textSize="12sp"
+            android:textColor="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:id="@+id/contentWithBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/abb_black_48dp"
+            android:paddingLeft="10sp"
+            android:paddingBottom="10sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/GroupMName"
+                android:layout_marginRight="4sp"
+                android:textColor="@color/textColorL"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="6dp" />
+
+            <TextView
+                android:id="@+id/txtMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorL"
+                android:maxWidth="240sp"
+                android:textSize="16sp"
+                android:layout_marginTop="6dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/vBlue"
+                android:background="@drawable/ic_error_black_18dp"
+                android:layout_marginLeft="6sp"
+                android:layout_marginTop="6sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:48"
+                android:id="@+id/timeD"
+                android:textSize="10sp"
+                android:textColor="@color/textColorL"
+                android:layout_marginLeft="4sp"
+                android:layout_marginBottom="5sp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="6dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

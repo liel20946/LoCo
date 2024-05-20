@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_admin_set"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.loco.AdminSet">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar">
+    </include>
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/GNTV"
+        android:text="Group Name:"
+        android:textColor="@color/textColorL"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/GNameAdmin"
+        android:layout_alignBottom="@+id/GNameAdmin"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:textCursorDrawable="@drawable/mycursor"
+        android:layout_marginTop="72dp"
+        android:id="@+id/GNameAdmin"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/GPassAdmin"
+        android:layout_toEndOf="@+id/GNTV" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/GPTV"
+        android:text="Group Password:"
+        android:textColor="@color/textColorL"
+        android:textSize="18sp"
+        android:layout_alignStart="@+id/GNTV"
+        android:layout_below="@+id/GNameAdmin"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/currentTTL"
+        tools:text="Test"
+        android:textColor="@color/blackk"
+        android:textSize="18sp"
+        android:layout_marginTop="67dp"
+        android:layout_below="@+id/GPassAdmin"
+        android:layout_alignStart="@+id/GPTV"
+        android:layout_alignEnd="@+id/GNameAdmin" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/ADMINTTL"
+        android:background="@color/LoCoOrange"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/currentTTL"
+        android:layout_alignEnd="@+id/currentTTL" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:textCursorDrawable="@drawable/mycursor"
+        android:id="@+id/GPassAdmin"
+        android:layout_alignBaseline="@+id/GPTV"
+        android:layout_alignBottom="@+id/GPTV"
+        android:layout_toEndOf="@+id/GPTV" />
+
+    <Button
+        android:text="Done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="74dp"
+        android:id="@+id/adminDone"
+        android:background="@color/LoCoOrange"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.loco">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:compatibleWidthLimitDp="320"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".SearchResultsActivity" />
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="LoCo" />
+        <activity
+            android:name=".Register"
+            android:label="@string/title_activity_register" />
+        <activity
+            android:name=".In_Chat"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_in__chat"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".TabFragment1"
+            android:label="@string/title_activity_tab_fragment1"
+            android:theme="@android:style/Theme.NoDisplay" />
+        <activity
+            android:name=".TabFragmment2"
+            android:label="@string/title_activity_tab_fragmment2" />
+        <activity
+            android:name=".AddFriend"
+            android:label="@string/title_activity_add_friend" />
+        <activity
+            android:name=".TabFragment3"
+            android:label="@string/title_activity_tab_fragment3" />
+
+        <service android:name=".HelloService" />
+
+        <receiver android:name=".MyBroadcastReciver">
+            <intent-filter>
+                <action android:name="TestReciver"></action>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Settings"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".EditInfo"
+            android:label="@string/title_activity_edit_info"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Recovery" />
+        <activity android:name=".RecoveryResult" />
+        <activity android:name=".PicRetrieve" />
+        <activity android:name=".JoinGroup" />
+        <activity android:name=".CreateGroup" />
+        <activity android:name=".MembersSet" />
+        <activity android:name=".AdminSet"/>
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+        <activity android:name=".CropPic"/>
+    </application>
+
+</manifest>

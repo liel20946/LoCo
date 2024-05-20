@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    tools:context="com.example.user.loco.MembersSet">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar">
+    </include>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Empty Group"
+        android:id="@+id/groumNAME"
+        android:layout_below="@+id/app_bar"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/textColorL"
+        android:textSize="20sp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="number of members:"
+        android:id="@+id/memNum"
+        android:layout_below="@+id/groumNAME"
+        android:layout_alignStart="@+id/groumNAME"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/textColorL"
+        android:layout_marginLeft="0dp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/membersL"
+        android:scrollbarThumbVertical="@drawable/custom_scroll_style"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="false"
+        android:layout_below="@+id/memNum"
+        android:layout_above="@+id/leavegbtn" />
+
+    <Button
+        android:text="Leave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/leavegbtn"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:background="@color/Red" />
+
+</RelativeLayout>

@@ -1,0 +1,185 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.user.loco.AddFriend"
+    android:background="@color/BaseColor">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar">
+    </include>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/SaveInfo"
+        android:layout_marginBottom="39sp"
+        android:background="@color/appBarC"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="saveInfo"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Name:"
+        android:id="@+id/fnsee"
+        android:textColor="@color/textColorL"
+        android:textSize="18sp"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/app_bar"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Name:"
+        android:id="@+id/lnsee"
+        android:textColor="@color/textColorL"
+        android:textSize="18sp"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/PaText"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age:"
+        android:id="@+id/asee"
+        android:textColor="@color/textColorL"
+        android:textSize="18sp"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/lnsee"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address:"
+        android:id="@+id/adsee"
+        android:textColor="@color/textColorL"
+        android:textSize="18sp"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/asee"
+        android:layout_marginLeft="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fnEdit"
+        android:textColor="@color/appc"
+        android:textSize="18sp"
+        android:textCursorDrawable="@drawable/mycursor"
+        android:textColorHint="@color/appc"
+        android:singleLine="true"
+        android:nextFocusDown="@+id/PaText"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="8dp"
+        android:layout_alignEnd="@+id/lnEdit"
+        android:layout_toEndOf="@+id/fnsee"
+        android:layout_alignTop="@+id/fnsee"
+        android:layout_above="@+id/space"
+        android:text="Unknown" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lnEdit"
+        android:textCursorDrawable="@drawable/mycursor"
+        android:textColor="@color/appc"
+        android:textSize="18sp"
+        android:textColorHint="@color/appc"
+        android:singleLine="true"
+        android:nextFocusDown="@+id/agEdit"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="8dp"
+        android:layout_alignBottom="@+id/lnsee"
+        android:layout_alignEnd="@+id/SaveInfo"
+        android:layout_toEndOf="@+id/fnsee"
+        android:layout_alignTop="@+id/lnsee"
+        android:text="Unknown" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/agEdit"
+        android:textColor="@color/appc"
+        android:textSize="18sp"
+        android:textCursorDrawable="@drawable/mycursor"
+        android:textColorHint="@color/appc"
+        android:singleLine="true"
+        android:nextFocusDown="@+id/adEdit"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="0dp"
+        android:layout_alignStart="@+id/lnEdit"
+        android:layout_alignEnd="@+id/lnEdit"
+        android:layout_alignTop="@+id/asee"
+        android:layout_alignBottom="@+id/asee"
+        android:text="Unknown" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adEdit"
+        android:textColor="@color/appc"
+        android:textSize="18sp"
+        android:textCursorDrawable="@drawable/mycursor"
+        android:textColorHint="@color/appc"
+        android:background="@android:color/transparent"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:layout_alignBaseline="@+id/adsee"
+        android:layout_alignBottom="@+id/adsee"
+        android:layout_alignStart="@+id/agEdit"
+        android:layout_alignEnd="@+id/agEdit"
+        android:text="Unknown" />
+
+    <Space
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/fnsee"
+        android:layout_alignParentStart="true"
+        android:id="@+id/space" />
+
+    <Space
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/space3"
+        android:layout_below="@+id/asee"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:id="@+id/PaText"
+        android:textColor="@color/textColorL"
+        android:textSize="18sp"
+        android:layout_below="@+id/fnsee"
+        android:layout_alignStart="@+id/fnsee"
+        android:layout_marginTop="29dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/psEdit"
+        android:textColor="@color/appc"
+        android:textSize="18sp"
+        android:textCursorDrawable="@drawable/mycursor"
+        android:textColorHint="@color/appc"
+        android:singleLine="true"
+        android:nextFocusDown="@+id/lnEdit"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="8dp"
+        android:text="Unknown"
+        android:layout_alignTop="@+id/PaText"
+        android:layout_toEndOf="@+id/fnsee"
+        android:autoText="false"
+        android:inputType="textPassword" />
+
+</RelativeLayout>
